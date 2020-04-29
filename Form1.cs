@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Diagnostics;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AlarmTrigger
 {
@@ -22,6 +23,13 @@ namespace AlarmTrigger
         {
             //Form1 openForm = new Form1();
             //openForm.Show();
+            using (StreamWriter w = File.AppendText("log.txt"))
+            {
+                Log(textBox1.Text, w);
+                Log(textBox2.Text, w);
+                Log(textBox3.Text, w);
+                Log(richTextBox1.Text, w);
+            }
             Process cmd = new Process();
             cmd.StartInfo.FileName = "cmd.exe";
             cmd.StartInfo.RedirectStandardInput = true;
@@ -38,14 +46,14 @@ namespace AlarmTrigger
             Application.Exit();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public static void Log(string logMessage, TextWriter w)
         {
-
+            w.Write("\r\nLog Entry : ");
+            w.WriteLine($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}");
+            w.WriteLine("  :");
+            w.WriteLine($"  :{logMessage}");
+            w.WriteLine("-------------------------------");
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
