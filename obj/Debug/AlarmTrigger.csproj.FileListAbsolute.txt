@@ -1,0 +1,8 @@
+C:\Users\rajan\source\repos\AlarmTrigger\bin\Debug\AlarmTrigger.exe
+C:\Users\rajan\source\repos\AlarmTrigger\bin\Debug\AlarmTrigger.pdb
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.csprojAssemblyReference.cache
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.Form1.resources
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.Properties.Resources.resources
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.csproj.GenerateResource.cache
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.exe
+C:\Users\rajan\source\repos\AlarmTrigger\obj\Debug\AlarmTrigger.pdb
